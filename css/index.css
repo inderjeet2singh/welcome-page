@@ -86,16 +86,7 @@ body{
     color: rgba(255, 255, 255, 0.664);
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.box:hover{
-    /* position: relative; */
-    /* margin-top: -100px; */
-    margin-top: -10vh;
-    color:rgb(218, 218, 218);
-    height: 300px;
-    /* height: 560px; */
-    transition-duration: 800ms;
-    /* !important */
-}
+
 .btn1{
     /* border: 1px solid yellow; */
     margin-top: 5px;
@@ -111,10 +102,7 @@ body{
     border-radius: 3px;
 }
 
-.add:hover{
-    background-color: rgb(231, 64, 64);
-    transition-duration: 900ms;
-}
+
 
 
 /* .footer div:hover{
@@ -159,4 +147,77 @@ body{
     transform: scale3d(1,1.3,1);
     transition: transform 0.5s;
 
+}
+.add:active{
+    background-color: rgb(231, 64, 64);
+    transition-duration: 900ms;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    /* Your styles here */
+    .box:hover{
+        /* position: relative; */
+        /* margin-top: -100px; */
+        margin-top: -10vh;
+        color:rgb(218, 218, 218);
+        height: 300px;
+        /* height: 560px; */
+        transition-duration: 800ms;
+        /* !important */
+    }.add:hover{
+        background-color: rgb(231, 64, 64);
+        transition-duration: 900ms;
+    }
+}
+
+
+
+@media only screen and (max-width:530px){
+    .links>a {
+        margin-right: 20px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    body{
+        background-attachment: fixed;
+    }
+    .footer{
+        height: fit-content;
+    }
+    .box{
+       
+        align-self: flex-start;
+    }
+    .box:not(:last-child)
+    {
+        margin-bottom: 20px;
+    }
+    .box:hover{
+        /* position: relative; */
+        /* margin-top: -100px; */
+        /* margin-top: -10vh; */
+        color:rgb(218, 218, 218);
+        width:90%;
+        /* height: 560px; */
+        transition-duration: 800ms;
+        /* !important */
+    }
+    .box{
+        background-color: rgba(141, 138, 138, 0.116);
+        margin-inline-end: auto;
+        width:30%;
+        /* margin-top: 10vh; */
+        align-self: center;
+        /* border: 1px solid black; */
+        /* height: 500px; */
+        /* width: 50px ; */
+        align-self: flex-end;
+        height: 210px;
+        padding: 15px;
+        /* margin-left: 10px; */
+        margin-left: 0.8vw;
+        overflow: hidden;
+        transition-duration: 800ms;
+    }
 }
